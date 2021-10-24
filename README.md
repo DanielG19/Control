@@ -27,10 +27,14 @@ In this part a PD is implemented in the same way. First we get errors, then mult
 
 5.- Implement yaw control in C++.
 In this part it is needed to understand in which part the angle is, if the angle is bwteen 0 and 179, then we can proceed with positive angles, if the angle is from 180 to 359, then is better to use negative angles.
-Once this is determined, i proceeded to get the error from the angles, and did the same thing with finding in where position the angle was.
+Once this is determined, i proceeded to get the error from the angles.
 Once all of this is done, the error is multiplied by the kpYaw gain.
 
-![image](https://user-images.githubusercontent.com/29236973/138581818-a089144d-3494-4173-9e7b-1da5aa41d2a4.png)
+![image](https://user-images.githubusercontent.com/29236973/138583454-fc389b2f-5fc0-4def-84fb-55b8e0ddbae9.png)
 
 6.- Implement calculating the motor commands given commanded thrust and moments in C++.
+Finally used the required formulas so that i could get C_bar, P_bar, Q_bar and R_bar.
+Knowing that F1 + F2 + F3 + F4 = C and so one so for with the other variables, it is easy to use linear algebra and get the inverse of the matrix in order to get the angular velocities W1,W2,W3,W4.
+
+![image](https://user-images.githubusercontent.com/29236973/138583489-58d39c2a-6fbb-40d1-9c1f-2085c23ade00.png)
 
