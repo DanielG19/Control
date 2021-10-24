@@ -12,6 +12,15 @@ Passing the thrust to acceleration by divinding it by the mass, gives "c", which
 ![image](https://user-images.githubusercontent.com/29236973/138580232-f41bf40a-4f81-4685-a3a1-94a0a56805b9.png)
 
 3.- Implement altitude controller in C++.
-
+In this part, i implemented a complete PID. I get the position and velocity errors and multiply them by their corresponding Gains.
+Then in order to get U_bar, i added the P controller + PD Controller + PI controller and finally the commanded acceleration of Z.
+In order to get the thrust, the u1_bar is normalized in the Z direction and substract from gravity.
+The result is multiply it by the mass, and thus, this gives the Thrust.
+But following NED coordinates, the thrust must be negative.
 
 ![image](https://user-images.githubusercontent.com/29236973/138580432-ee4c1a8f-ad1b-429f-8e42-0d52d19c26d9.png)
+
+4.- Implement lateral position control in C++
+
+
+![image](https://user-images.githubusercontent.com/29236973/138581624-adaee4d5-0a75-4e60-bdef-cb67ab7b614d.png)
