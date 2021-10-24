@@ -20,7 +20,13 @@ But following NED coordinates, the thrust must be negative.
 
 ![image](https://user-images.githubusercontent.com/29236973/138580432-ee4c1a8f-ad1b-429f-8e42-0d52d19c26d9.png)
 
-4.- Implement lateral position control in C++
-
+4.- Implement lateral position control in C++.
+In this part a PD is implemented in the same way. First we get errors, then multiplying them by their correspondnig gains And finally adding the results to the X_acceleration and Y_acceleration.
 
 ![image](https://user-images.githubusercontent.com/29236973/138581624-adaee4d5-0a75-4e60-bdef-cb67ab7b614d.png)
+
+5.- Implement yaw control in C++.
+
+
+![image](https://user-images.githubusercontent.com/29236973/138581818-a089144d-3494-4173-9e7b-1da5aa41d2a4.png)
+
