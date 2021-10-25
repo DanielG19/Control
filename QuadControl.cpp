@@ -274,7 +274,7 @@ V3F QuadControl::LateralPositionControl(V3F posCmd, V3F velCmd, V3F pos, V3F vel
       X_Error_Dot = 0;
   }
 
-  if (Y_Error < .06 && Y_Error > -.06) {
+  if (Y_Error < .065 && Y_Error > -.065) {
       Y_Error = 0;
   }
 
